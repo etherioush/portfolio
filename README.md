@@ -2,4 +2,4 @@
 
 
 
-![mazandi profile](http://mazandi.herokuapp.com/api?handle={Gold}&theme=warm&right)
+![mazandi profile](http://mazandi.herokuapp.com/api?handle=Emeraude&theme=&right)
