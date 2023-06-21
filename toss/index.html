@@ -10,7 +10,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+        $(document).ready(function(){
+            // console.log($("#send").offset().top);
+
+            $(window).scroll(function(){
+                if($(window).scrollTop()>2500){
+                    $("#send .span1").addClass("animate__animated").addClass("animate__slideInLeft");
+                    $("#send .text1").addClass("animate__animated").addClass("animate__slideInLeft");
+                    $("#send .text2").addClass("animate__animated").addClass("animate__slideInLeft");
+                    $("#send .pic03").addClass("animate__animated").addClass("animate__slideInRight");
+                };
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- navigation ------------------------>
@@ -130,8 +145,9 @@
         <div id="box6" class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <span>평생 무료 송금</span>
-                    
+                    <div class="span1">
+                        <span>평생 무료 송금</span>
+                    </div>
                     <p class="text1">
                     토스 평생 무료송금으로<br>
                     모두의 금융에 자유를
@@ -143,46 +159,50 @@
                 </div>
                 <div class="col-sm-6">
                     <img class="pic03" src="img/section1_2_01.png" alt="수수료">
-                </div>
             </div>
-            <div id="box7" class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img class="pic03" src="img/section1_2_02.png" alt="송금전주의">
-                    </div>
-                    <div class="col-sm-6">
-                        <span>사기계좌 조회</span>
-                        <p class="text1">
-                            송금 전 사기 내역 조회로<br>
-                            피해를 미리 방지할 수 있어요
-                        </p>
-                        <p class="text2">    
-                            송금 전 토스가 알아서 사기 내역 조회를 해드려요.<br>
-                            상대방의 연락처 또는 계좌가 사기 계좌인지 조회해<br>
-                            안전하게 송금할 수 있어요.
-                        </p>
-                    </div>
+        </div>
+        <div id="box7" class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img class="pic03" src="img/section1_2_02.png" alt="송금전주의">
                 </div>
-            </div>
-            <div id="box8" class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <span>자동이체 예약</span>
-                        <p class="text1">
-                            은행 점검 시간,<br>
-                            기다릴 필요 없어요
-                        </p>
-                        <p class="text2">    
-                            은행 점검 시간에는 자동이체 예약을 이용해보세요.<br>
-                            점검 시간이 끝나면 토스가 알아서 송금해드릴게요.
-                        </p>
+                <div class="col-sm-6">
+                    <div class="span1">
+                    <span>사기계좌 조회</span>
                     </div>
-                    <div class="col-sm-6">
-                        <img class="pic03" src="img/section1_2_03.png" alt="점검후자동송금">
-                    </div>
+                    <p class="text1">
+                        송금 전 사기 내역 조회로<br>
+                        피해를 미리 방지할 수 있어요
+                    </p>
+                    <p class="text2">    
+                        송금 전 토스가 알아서 사기 내역 조회를 해드려요.<br>
+                        상대방의 연락처 또는 계좌가 사기 계좌인지 조회해<br>
+                        안전하게 송금할 수 있어요.
+                    </p>
                 </div>
             </div>
         </div>
+        <div id="box8" class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="span1">
+                    <span>자동이체 예약</span>
+                    </div>
+                    <p class="text1">
+                        은행 점검 시간,<br>
+                        기다릴 필요 없어요
+                    </p>
+                    <p class="text2">    
+                        은행 점검 시간에는 자동이체 예약을 이용해보세요.<br>
+                        점검 시간이 끝나면 토스가 알아서 송금해드릴게요.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <img class="pic03" src="img/section1_2_03.png" alt="점검후자동송금">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- 송금 끝 -------------------------------------------------->
 
