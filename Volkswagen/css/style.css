@@ -20,6 +20,7 @@ h1 img{ width: 280; height: auto;}
 header {width: 700px; height: 100%; position: fixed; top: 0px; left: -420px; background: linear-gradient(-45deg,#001E50, #003165, #004279); transform: skewX(-40deg); }
 
 /* 1depth */
+#gnb .fa { animation: fa-spin 2s infinite linear;}
 #gnb { width: 220px; position: absolute; top: 90px; right: 0px;}
 #gnb>li {position: relative; font-size: 20px; left: -20px;}
 #gnb>li>a { display: block; width: 240px; height: 50px; font-size: border  18px/3 play; color: #eee; box-sizing: border-box; padding-right: 25px; text-align: right; line-height: 50px;}
