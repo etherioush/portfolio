@@ -12,7 +12,7 @@ body { position: fixed;
 img { border: 0;}
 
 /* 배경동영상 */
-iframe{ width: 100%; min-width: 1600px; height: 100%; position: fixed; top: -60px; left: 0px; opacity: 0.9; }
+iframe{ width: 100%; min-width: 1600px; height: 100%; position: fixed; top: -60px; left: 0px; opacity: 0.9; pointer-events: none;}
 
 /* 로고 */
 h1 { position: fixed; top: 40px; left: 65px !important; z-index: 10;}
