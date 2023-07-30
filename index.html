@@ -1,17 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>유현준 포트폴리오</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
 </head>
 <body>
-    <h1>Portfolio</h1>
-    <h1>글로벌 IT데모</h1>
-    <a href="https://etherioush.github.io/portfolio/globalIT" target="_blank">글로벌 IT 데모</a>
-    <h1>Toss데모</h1>
-    <a href="https://etherioush.github.io/portfolio/toss" target="_blank">토스 데모</a>
-    <h1>Volkswagen 데모</h1>
-    <a href="https://etherioush.github.io/portfolio/Volkswagen" target="_blank">폭스바겐 데모</a>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-main logo h1 align-self-center" href="index.html">
+                Jun
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skill">Ability</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <div id="home" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img src="./img/0.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="h1 text-main"><br><b>안녕하세요!</b></h1><br>
+                                <h3 class="h2">백엔드 개발자로 공부중인 <br>유현준입니다.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Home.End -->
+
+
+    <!-- About  -->
+    <section class="container py-5">
+        <div id="about" class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">About me</h1>
+                <p>
+                    안녕하세요! 비전공자 개발자 유현준입니다. 
+                    비록 비전공자이지만, 코딩에 놀라운 매력을 느껴 꾸준히 노력하고 있습니다. 
+                    웹 개발에 관심이 많고, 프로젝트를 통해 다양한 기술을 익혔습니다. 
+                    더 나은 개발자로 성장하기 위해 노력하고 있으며, 
+                    어려운 문제에도 적극적으로 도전하고 누구나 할 수 있지만
+                    아무나 할 수 없는 것으로 실력을 키워나가겠습니다.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#project"><img class="aimg" src="./img/대기.jpg"></a>
+                <h5 class="text-center mt-3 mb-3">Toy Project</h5>
+                <p class="text-center"><a class="btn btn-main" href="#project">바로가기</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#tproject"><img class="aimg" src="./img/대기.jpg"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Team Project</h2>
+                <p class="text-center"><a class="btn btn-main" href="#tproject">바로가기</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#skill"><img class="aimg" src="./img/대기.jpg"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Ability</h2>
+                <p class="text-center"><a class="btn btn-main" href="#skill">바로가기</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- About.End -->
+
+
+    <!-- Toy Project -->
+    <section id="project">
+        <div class="container py-5">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Toy Project</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div id="toy1" class="card h-auto">
+                        <a href="https://etherioush.github.io/portfolio/toss/">
+                            <img src="./img/토스데모페이지.png" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-auto">
+                        <a href="https://etherioush.github.io/portfolio/Volkswagen/">
+                            <img src="./img/폭스바겐 데모페이지.png" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-auto">
+                        <a href="#">
+                            <img src="./img/대기.jpg" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Toy Project.End -->
+
+    <!-- Team Project -->
+    <section id="tproject">
+        <div class="container py-5">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Team Project</h1>
+                </div>
+            </div>
+            <div class="row text-center py-3">
+                <div class="card h-auto">
+                    <a href="#">
+                        <img src="./img/대기.jpg" class="card-img-top" alt="...">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Project.End -->
+
+    <!-- Skill -->
+    <div id="skill" class="container">
+        <div class="row">
+            <div class="Skill">
+                <div class="c1">
+                    <h1>ability</h1>
+                    <ul>
+                        <li>html5</li>
+                        <li>css3</li>
+                        <li>javascript</li>
+                        <li>jQuery</li>
+                        <li>java</li>
+                        <li>oracle</li>
+                        <li>jsp</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Skill.End -->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="contact">
+                    <h1>contact.</h1>
+                    <h5><i class="fa fa-github"></i><a href="https://github.com/etherioush/">https://github.com/etherioush</a></h5>
+                    <h5><i class="fa fa-envelope "></i><a href="http://www.naver.com/">dbguswns147@naver.com</a></h5>
+                    <h5><i class="fa fa-phone-square"></i><a href="http://www.naver.com/">Please contact me by email↖</a></h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer.End -->
+    <!-- top button-->
+    <div class="last-container">
+        <ul>
+            <li>
+                <a href="#" class="button">TOP</a>
+            </li>
+        </ul>
+        
+    </div>
 </body>
 </html>
