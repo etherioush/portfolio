@@ -25,7 +25,7 @@
   .h3 {
     font-size: 22px !important;
   }
-  
+
   /* General */
   .logo {
     font-weight: 500 !important; 
@@ -43,16 +43,24 @@
   
   /* home */
   #home { background: #efefef !important; }
-  /* Shop */
-  .shop-top-menu a:hover { color: #69bb7e !important; }
   /* About */
   .aimg {
     width: 120%;
   }
-  /* Project */
+  /*joy Project */
+  #toy1,#toy2,#toy3 {
+    transition: transform 200ms;
+  }
+
+  #toy1:hover,#toy2:hover,#toy3:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+    opacity: 0.7;
+  }
+
+
+
   
-  
-  /* Contact map */
+  /* Contact */
   
   /* Footer */
   #footer a { color: #000000; }
