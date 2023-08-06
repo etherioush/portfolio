@@ -8,13 +8,27 @@
     font-size: 18px !important;
     font-weight: 300 !important;
   }
-  li {
-    list-style: none;
-  }
+
   a {
     text-decoration: none;
   }
+  #nav2 {
+    margin-left: -99px;
+    color: yellow !important;
+    z-index: -1;
+  }
+  .nav-link {
+    float: right !important;
+    color: #000000;
+  }
+  .nav-link:hover {
+    color: #3dd1b1;
+  }
   .h1 {
+    font-size: 48px !important;
+    font-weight: 200 !important;
+  }
+  .about {
     font-size: 48px !important;
     font-weight: 200 !important;
   }
@@ -25,7 +39,45 @@
   .h3 {
     font-size: 22px !important;
   }
-
+  /* Skill */
+  .containers {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .containers .progress-container {
+    margin-bottom: 25px;
+  }
+  .containers .progress-container h4{
+    margin: 0 0 15px 15px;
+    letter-spacing: .5px;
+  }
+  .containers .progress-container .progress-bar{
+    position: relative;
+    width: auto;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 3px 4px 5px 0px rgba(204 185 185 / .75);
+  }
+  .containers .progress-container .progress-bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #6df5d7 50%, #00ffc8 100%);
+    transition: width .5s linear;
+    opacity: 0.8;
+  }
+  
   /* General */
   .logo {
     font-weight: 500 !important; 
@@ -33,13 +85,47 @@
   .text-main { 
     color: #3dd1b1 !important; 
   }
-  
-  .btn-main {
-    background-color: #3dd1b1 !important;
-    border-color: #3dd1b1 !important;
-    width: 150px;
+  .btn0 {
+    font-family: roboto;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    border-radius: 9px;
+    font-size: 1.5rem;
+    color: #eaeaea !important;
+    font-weight: bold;
+    background-color: #3dd1b1;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.5);
+    width: 400px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    --a: initial;
+  }
+  .btn0:hover {
+    background-color: #6fe0c8;
+    color: #fff !important;
+  }
+  .btn0:after {
+    content: "";
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    width: var(--diameter);
+    height: var(--diameter);
+    transform: scale(0);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: var(--a);
   }
   
+  @keyframes ripple-effect {
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
   
   /* home */
   #home { background: #efefef !important; }
@@ -54,7 +140,7 @@
 
   #toy1:hover,#toy2:hover,#toy3:hover {
     transform: scale3d(1.05, 1.05, 1.05);
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
 
@@ -101,6 +187,10 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    position: relative;
+    left: 38% !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .button:hover {
     background-color: #fff;
@@ -108,22 +198,44 @@
     border : 1px solid #3dd1b1;
     font-weight: bolder !important;
   }
+
+  .button {
+    list-style: none;
+  }
+    
   
-  
-  
+  @media (min-width: 500px) {
+    .tempaltemo-carousel .h1 {
+        font-size: 1em !important; 
+      }
+      #nav2 {
+        margin-right: 315px;
+
+      }
+  }
   @media (min-width: 576px) {
     .tempaltemo-carousel .h1 {
         font-size: 1em !important; 
       }
+      #nav2 {
+        margin-right: 372px;
+
+      }
+
   }
   
   @media (min-width: 768px) {
-    #templatemo_main_nav .navbar-nav {max-width: 450px;}
+    #templatemo_main_nav .navbar-nav {
+      max-width: 450px;
+    }
+    #nav2 {
+      margin-right: 553px;
+    }
+
   }
   
   @media (min-width: 992px) {
-    #templatemo_main_nav .navbar-nav {max-width: 550px;}
-    #home .carousel-item {min-height: 30rem !important;}
+    #navl{margin-left: -500px;}
   }
   
   @media (min-width: 1200px) {}

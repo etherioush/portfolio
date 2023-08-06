@@ -15,8 +15,10 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
-
             <a class="navbar-brand text-main logo h1 align-self-center" href="index.html">
+                Jun
+            </a>
+            <a id="nav2" class="navbar-brand text-main logo h1 align-self-center" href="index.html">
                 Jun
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +27,7 @@
 
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                    <ul id="navl" class="nav justify-content-end">
                         <li class="nav-item">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
@@ -33,46 +35,32 @@
                             <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#project">Project</a>
+                            <a class="nav-link" href="#skill">Skill</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skill">Ability</a>
+                            <a class="nav-link" href="#project">Project</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#footer">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-
         </div>
     </nav>
 
     <!-- Home -->
     <div id="home" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img src="./img/0.jpg" alt="">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left align-self-center">
-                                <h1 id="typ1" class="h1 text-main"></h1><br>
-                                <h3 id="typ2" class="h2"></h3>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="row p-5">
+                <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                    <img src="./img/0.jpg" alt="">
+                </div>
+                <div class="col-lg-6 mb-0 d-flex align-items-center">
+                    <div class="text-align-left align-self-center"><br>
+                        <h1 id="typ1" class="h1 text-main"></h1><br>
+                        <h3 id="typ2" class="h2"></h3>
+                        
                     </div>
                 </div>
             </div>
@@ -83,38 +71,111 @@
 
     <!-- About  -->
     <section class="container py-5">
-        <div id="about" class="row text-center pt-3">
-            <div class="col-lg-6 m-auto">
-                <h1 class="h1">About me</h1>
-                <p>
-                    안녕하세요! 비전공자 개발자 유현준입니다. 
-                    비록 비전공자이지만, 코딩에 놀라운 매력을 느껴 꾸준히 노력하고 있습니다. 
-                    웹 개발에 관심이 많고, 프로젝트를 통해 다양한 기술을 익혔습니다. 
-                    더 나은 개발자로 성장하기 위해 노력하고 있으며, 
-                    어려운 문제에도 적극적으로 도전하고 실력을 키워나가겠습니다.
-                </p>
+        <div id="about" class="row">
+            <div class="col-lg-12 m-auto">
+                <h1 class="about">About me.</h1>
+                <ul class="about1">
+                    <li>안녕하세요! 비전공자 개발자 유현준입니다.</li> 
+                    <li>비록 비전공자이지만, 코딩에 놀라운 매력을 느껴 꾸준히 노력하고 있습니다.</li>
+                    <li>웹 개발에 관심이 많고, 프로젝트를 통해 다양한 기술을 익혔습니다.</li>
+                    <li>더 나은 개발자로 성장하기 위해 노력하고 있으며,</li>
+                    <li>어려운 문제에도 적극적으로 도전하고 실력을 키워나가겠습니다.</li>
+                </ul>
+            </div>
+        </div><br>
+    <!-- About.End -->
+    
+    <!-- Skill -->
+        <div id="skill" class="containers">
+            <div class="progress-container">    
+                <h1>Skill.</h1>
+                <h4>HTML</h4>
+                <div class="progress-bar">
+                    <span data-width="70%"></span>
+                </div>
+            </div>
+            <div class="progress-container">    
+                <h4>CSS</h4>
+                <div class="progress-bar">
+                    <span data-width="50%"></span>
+                </div>
+            </div>
+            <div class="progress-container">    
+                <h4>Javascript</h4>
+                <div class="progress-bar">
+                    <span data-width="20%"></span>
+                </div>
+            </div>
+            <div class="progress-container">    
+                <h4>BootStrap</h4>
+                <div class="progress-bar">
+                    <span data-width="50%"></span>
+                </div>
+            </div>
+            <div class="progress-container">    
+                <h4>JQUERY</h4>
+                <div class="progress-bar">
+                    <span data-width="20%"></span>
+                </div>
+            </div>
+            <div class="progress-container">    
+                <h4>JAVA</h4>
+                <div class="progress-bar">
+                    <span data-width="20%"></span>
+                </div>
+            </div>
+            <div class="progress-container">    
+                <h4>ORACLE</h4>
+                <div class="progress-bar">
+                    <span data-width="30%"></span>
+                </div>
+            </div>
+            <div class="progress-container">    
+                <h4>JSP</h4>
+                <div class="progress-bar">
+                    <span data-width="20%"></span>
+                </div>
+            </div>
+            <div class="progress-container">    
+                <h4>SPRING</h4>
+                <div class="progress-bar">
+                    <span data-width="10%"></span>
+                </div>
+            </div>
+        </div>
+        <br>
+    <!-- Skill.End -->
+    <!-- Project -->
+        <div class="row">
+            <div class="col-12 col-md-6 p-5 mt-3">
+                <a href="#project">
+                    <img class="aimg" src="./img/toy.jpg">
+                </a>
+            </div>
+            <div class="col-12 col-md-6 p-5 mt-5 text-center">
+                <h1 class="mt-3 mb-3">Toy Project</h1>
+
+                <button id="btn1" class="btn0">
+                    <a class="btn btn-main" href="#project">바로가기</a>
+                </button>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#project"><img class="aimg" src="./img/대기.jpg"></a>
-                <h5 class="text-center mt-3 mb-3">Toy Project</h5>
-                <p class="text-center"><a class="btn btn-main" href="#project">바로가기</a></p>
+            <div class="col-12 col-md-6 p-5 mt-5 text-center">
+                <h1 class="mt-3 mb-3">Team Project</h1>
+
+                <button id="btn2" class="btn0">
+                    <a class="btn btn-main" href="#tproject">바로가기</a>
+                </button>
             </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#tproject"><img class="aimg" src="./img/대기.jpg"></a>
-                <h2 class="h5 text-center mt-3 mb-3">Team Project</h2>
-                <p class="text-center"><a class="btn btn-main" href="#tproject">바로가기</a></p>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#skill"><img class="aimg" src="./img/대기.jpg"></a>
-                <h2 class="h5 text-center mt-3 mb-3">Ability</h2>
-                <p class="text-center"><a class="btn btn-main" href="#skill">바로가기</a></p>
+            <div class="col-12 col-md-6 p-5 mt-3">
+                <a href="#tproject">
+                    <img class="aimg" src="./img/rainbow.jpg">
+                </a>
             </div>
         </div>
     </section>
-    <!-- About.End -->
-
+    <!-- Project.End -->
 
     <!-- Toy Project -->
     <section id="project">
@@ -161,7 +222,7 @@
             </div>
             <div class="row text-center py-3">
                 <div class="card h-auto">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="./img/대기.jpg" class="card-img-top" alt="...">
                     </a>
                 </div>
@@ -169,29 +230,6 @@
         </div>
     </section>
     <!-- Team Project.End -->
-
-    <!-- Skill -->
-    <div id="skill" class="container">
-        <div class="row">
-            <div class="Skill">
-                <div class="c1">
-                    <h1>ability</h1>
-                    <ul>
-                        <li>html5</li>
-                        <li>css3</li>
-                        <li>javascript</li>
-                        <li>jQuery</li>
-                        <li>java</li>
-                        <li>oracle</li>
-                        <li>jsp</li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <!-- Skill.End -->
 
     <!-- Footer -->
     <footer id="footer">
@@ -207,14 +245,13 @@
     <!-- Footer.End -->
     <!-- top button-->
     <div class="last-container">
-        <ul>
-            <li>
-                <a href="#" class="button">TOP</a>
-            </li>
-        </ul>
+        <a  href="index.html" class="button">TOP</a>
     </div>
+    <!-- End -->
 
+    <!-- script -->
     <script src="./js/typing.js"></script>
-
+    <script src="./js/BtnRip.js"></script>
+    <script src="./js/progressbar.js"></script>
 </body>
 </html>
