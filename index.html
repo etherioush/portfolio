@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
+    <nav id="top" class="navbar navbar-expand-lg navbar-light">
         <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand text-main logo h1 align-self-center" href="index.html">
                 Jun
@@ -21,11 +21,11 @@
             <a id="nav2" class="navbar-brand text-main logo h1 align-self-center" href="index.html">
                 Jun
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#nav_drop">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="align-self-center collapse navbar-collapse" id="nav_drop">
                 <div class="flex-fill">
                     <ul id="navl" class="nav justify-content-end">
                         <li class="nav-item">
@@ -154,25 +154,38 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-4 mb-4">
-                    <div id="toy1" class="card h-auto">
+                <div class="col-12 col-md-6 mb-6">
+                    <div id="toy1" class="toy card h-auto">
                         <a href="https://etherioush.github.io/portfolio/toss/">
                             <img src="./img/토스데모페이지.png" class="card-img-top" alt="토스 데모페이지">
+                            <p class="text-center m-1">토스 데모페이지</p>
+                            <p class="text-center m-1">HTML5, CSS3, BootStrap, jQuery</p>
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div id="toy2" class="card h-auto">
+                <div class="col-12 col-md-6 mb-6">
+                    <div id="toy2" class="toy card h-auto">
                         <a href="https://etherioush.github.io/portfolio/Volkswagen/">
                             <img src="./img/폭스바겐 데모페이지.png" class="card-img-top" alt="폭스바겐 데모페이지">
+                            <p class="text-center m-1">폭스바겐 홍보페이지</p>
+                            <p class="text-center m-1">기술</p>
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div id="toy3" class="card h-auto">
+            </div><br>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-6">
+                    <div id="toy3" class="toy card h-auto">
                         <a href="#">
                             <img src="./img/대기.jpg" class="card-img-top" alt="...">
                         </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-6">
+                    <div id="toy4" class="toy card h-auto">
+                        <video controls muted none src="./video/arduino.mp4" type="video/mp4"></video>
+                        <p class="text-center m-1">LED 전구 불켜기</p>
+                        <p class="text-center m-1">Arduino, Tinkercad</p>
                     </div>
                 </div>
             </div>
@@ -213,12 +226,15 @@
     <!-- Footer.End -->
     <!-- top button-->
     <div class="last-container">
-        <a  href="index.html" class="button">TOP</a>
+        <a href="#top" class="button">TOP</a>
     </div>
     <!-- End -->
 
     <!-- script -->
     <script src="./js/typing.js"></script>
     <script src="./js/progressbar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
