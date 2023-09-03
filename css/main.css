@@ -12,10 +12,8 @@
   a {
     text-decoration: none;
   }
-  #nav2 {
-    margin-left: -99px;
-    color: yellow !important;
-    z-index: -1;
+  #main {
+    text-shadow: -4px 0px yellow;
   }
   .nav-link {
     float: right !important;
@@ -213,9 +211,6 @@
     .tempaltemo-carousel .h1 {
         font-size: 1em !important; 
       }
-      #nav2 {
-        margin-right: 315px;
-      }
       .button {
         left: 28% !important;
       }
@@ -227,17 +222,11 @@
     .tempaltemo-carousel .h1 {
         font-size: 1em !important; 
       }
-      #nav2 {
-        margin-right: 372px;
-      }
   }
   
   @media (min-width: 768px) {
     #templatemo_main_nav .navbar-nav {
       max-width: 450px;
-    }
-    #nav2 {
-      margin-right: 553px;
     }
     .button {
       left: 35% !important;
