@@ -1,6 +1,6 @@
 const content = "안녕하세요! \n";
 const text = document.querySelector("#typ1");
-const content1 = "백엔드 개발자로 공부중인 \n 유현준입니다.";
+const content1 = "신입 백엔드 개발자 유현준입니다.";
 const text1 = document.querySelector("#typ2");
 let i = 0;
 let j = 0;
