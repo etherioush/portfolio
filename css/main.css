@@ -1,4 +1,11 @@
+@font-face {
+  font-family: 'MaplestoryOTFBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
+  font-family: 'MaplestoryOTFBold';
     margin: 0;
     padding: 0;
   }
@@ -14,6 +21,7 @@
   }
   #main {
     text-shadow: -4px 0px yellow;
+    font-family: 'MaplestoryOTFBold';
   }
   .nav-link {
     float: right !important;
@@ -30,8 +38,27 @@
     font-size: 48px !important;
     font-weight: 200 !important;
   }
-  .h2 {
+  .hi {
+    font-size: 48px !important;
+    font-weight: 200 !important;
+    color: #3dd1b1;
+    font-family: 'MaplestoryOTFBold';
+  }
+  .name {
     font-size: 30px !important;
+    font-family: 'MaplestoryOTFBold';
+  }
+  .typing-txt {
+    display: none;
+  }
+  .typing-txt ul {
+    list-style: none;
+  }
+  .typing ul li {
+    display: block;
+  }
+  .typing ul li.on {
+    display: inline-block;
     animation-name: cursor;
     animation-duration: 1s;
     animation-iteration-count: infinite;
